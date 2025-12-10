@@ -329,14 +329,12 @@ void Step2()
 
     char[,] grid = new char[rows, cols];
 
-    // Grid'e aktar
     for (int r = 0; r < rows; r++)
         for (int c = 0; c < cols; c++)
             grid[r, c] = lines[r][c];
 
     int totalRemoved = 0;
 
-    // 8 yön
     int[] dr = { -1, -1, -1, 0, 0, 1, 1, 1 };
     int[] dc = { -1, 0, 1, -1, 1, -1, 0, 1 };
 
